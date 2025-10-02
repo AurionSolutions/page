@@ -1,4 +1,13 @@
+// next.config.mjs
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const repoName = '/my-portf-main' // troque conforme necessário
 
-export default nextConfig;
+const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  basePath: repoName,
+  assetPrefix: repoName,
+  // outras opções...
+}
+
+export default nextConfig
